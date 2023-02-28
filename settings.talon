@@ -1,5 +1,11 @@
 -
 settings():
+# begin viv settings
+    # wait a little longer. default was 0.3
+    speech.timeout = 0.4
+
+# end viv settings
+
     # Adjust the scale of the imgui to my liking
     imgui.scale = 1.3
 
