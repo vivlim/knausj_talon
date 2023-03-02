@@ -211,12 +211,15 @@ class RelativeScreenPos:
 
 _snap_positions = {
     "primary": RelativeScreenPos(3 / 10, 0, 7 / 10, 1),
+    "middle": RelativeScreenPos(3 / 10, 0, 7 / 10, 1),
     "left": RelativeScreenPos(0, 0, 3 / 10, 1),
     "right": RelativeScreenPos(7 / 10, 0, 1, 1),
     "big": RelativeScreenPos(0 / 10, 0, 6 / 10, 1),
     "small": RelativeScreenPos(6 / 10, 0, 10 / 10, 1),
     "small top": RelativeScreenPos(6 / 10, 0, 10 / 10, 0.6),
+    "small up": RelativeScreenPos(6 / 10, 0, 10 / 10, 0.6),
     "small bottom": RelativeScreenPos(6 / 10, 0.6, 10 / 10, 1),
+    "small down": RelativeScreenPos(6 / 10, 0.6, 10 / 10, 1),
     # Halves
     # .---.---.     .-------.
     # |   |   |  &  |-------|
