@@ -2,7 +2,7 @@
 settings():
 # begin viv settings
     # wait a little longer. default was 0.3
-    speech.timeout = 0.4
+    speech.timeout = 0.3
 
 # end viv settings
 
