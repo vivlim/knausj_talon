@@ -8,3 +8,5 @@ wheel float: user.mouse_scroll_up_continuous()
 wheel float here:
     user.mouse_move_center_active_window()
     user.mouse_scroll_up_continuous()
+
+stab: key("shift-tab")

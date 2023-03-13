@@ -29,3 +29,12 @@ mark inbox channel read: user.discord_mark_inbox_read()
 [toggle] (deafen | undeafen): user.discord_deafen()
 answer call: user.discord_answer_call()
 decline call: user.discord_decline_call()
+
+# viv
+server up: key("ctrl-alt-up")
+server down: key("ctrl-alt-down")
+channel up: key("alt-up")
+channel down: key("alt-down")
+
+go back: key("alt-left")
+go forward: key("alt-right")
