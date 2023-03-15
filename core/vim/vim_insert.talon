@@ -1,4 +1,5 @@
 tag: user.vivlim_vim_insert
+tag: user.vivlim_vim_on
 -
 out:
     key("escape")
