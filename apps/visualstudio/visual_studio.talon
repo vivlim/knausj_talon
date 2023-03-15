@@ -91,5 +91,46 @@ step over: key(f10)
 debug step into: key(f11)
 debug step out [of]: key(f10)
 debug start: key(f5)
+start without debugging: key(ctrl-f5)
 debug stopper: key(shift-f5)
 debug continue: key(f5)
+
+# Building
+build solution: key(ctrl-shift-b)
+
+
+
+enable vim:
+    user.leave_insert_mode()
+
+(search box|control cue) [<user.text>]:
+    key("ctrl-q")
+    insert(user.text or "")
+
+control tea [<user.text>]:
+    key("ctrl-t")
+    insert(user.text or "")
+
+git status:
+    key(ctrl-0)
+    key(ctrl-g)
+    
+git menu:
+    key(alt-g)
+
+git pull:
+    key(alt-g)
+    sleep(25ms)
+    key(u)
+
+git checkout:
+    key(ctrl-alt-f3)
+
+git checkout main:
+    key(ctrl-alt-f3)
+    sleep(25ms)
+    insert("main")
+    sleep(250ms)
+    key("down")
+    sleep(25ms)
+    key("enter")

@@ -46,13 +46,13 @@ undo:
 redo:
     key("ctrl-r")
 
-go left:
+vim left:
     key("h")
-go down:
+vim down:
     key("j")
-go up:
+vim up:
     key("k")
-go right:
+vim right:
     key("l")
 
 look up:

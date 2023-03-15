@@ -20,6 +20,8 @@ apps.visual_studio = """
 os: windows
 and app.name: Microsoft Visual Studio 2022
 os: windows
+and app.name: Microsoft Visual Studio 2022 Preview
+os: windows
 and app.name: Microsoft Visual Studio 2019
 os: windows
 and app.name: devenv.exe

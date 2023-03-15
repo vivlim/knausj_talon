@@ -22,3 +22,6 @@ copy paste:
 
 vim mode:
     user.leave_insert_mode()
+
+enable vim:
+    user.leave_insert_mode()

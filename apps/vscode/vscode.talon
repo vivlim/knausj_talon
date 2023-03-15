@@ -284,3 +284,11 @@ easy motion:
     key("space")
     key("space")
     key("j")
+
+control p [<user.text>]:
+    key("ctrl-p")
+    insert(user.text or "")
+
+control shift p [<user.text>]:
+    key("ctrl-shift-p")
+    insert(user.text or "")
