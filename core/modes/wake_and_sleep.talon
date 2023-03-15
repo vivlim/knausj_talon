@@ -17,3 +17,6 @@ mode: all
 ^mouth sounds$: speech.enable()
 ^talon sleep [<phrase>]$: speech.disable()
 ^talon wake$: speech.enable()
+
+^tobias sleep [<phrase>]$: speech.disable()
+^tobias wake$: speech.enable()
