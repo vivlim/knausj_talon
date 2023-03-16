@@ -6,6 +6,7 @@ tag(): user.line_commands
 tag(): user.find_and_replace
 tag(): user.snippets
 tag(): user.multiple_cursors
+tag(): user.vivlim_vim
 #multiple_cursor.py support end
 
 # Panels
@@ -100,8 +101,8 @@ build solution: key(ctrl-shift-b)
 
 
 
-enable vim:
-    user.leave_insert_mode()
+(enable vim|vim mode):
+    user.enable_vim()
 
 (search box|control cue) [<user.text>]:
     key("ctrl-q")

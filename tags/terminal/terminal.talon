@@ -1,5 +1,6 @@
 tag: terminal
 -
+tag(): user.vivlim_vim
 # tags should be activated for each specific terminal in the respective talon file
 
 list: user.terminal_list_directories()
@@ -19,9 +20,3 @@ copy paste:
     edit.copy()
     sleep(50ms)
     edit.paste()
-
-vim mode:
-    user.leave_insert_mode()
-
-enable vim:
-    user.leave_insert_mode()

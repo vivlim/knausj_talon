@@ -1,4 +1,5 @@
 tag: user.vivlim_vim_command
+tag: user.vivlim_vim_on
 -
 insert:
     key("i")
@@ -61,14 +62,14 @@ look up:
 look down:
     key("ctrl-d")
 
-line <number>:
+go line <number>:
     insert("{number}")
     key("shift-g")
 
-line top:
+go line top:
     key("gg")
 
-line bottom:
+go line bottom:
     key("shift-g")
 
 add surround:
@@ -83,10 +84,10 @@ change surround:
     key("c")
     key("s")
 
-bee:
+drow:
     key("b")
 
-shift bee:
+shift drow:
     key("shift-b")
 
 clipboard:
@@ -99,23 +100,30 @@ visual:
 visual line:
     key("shift-v")
 
-save:
-    key(":")
-    key("w")
+file save:
+    insert(":w")
+    key("enter")
+
+file save and close:
+    insert(":wq")
+    key("enter")
+
+file close without saving:
+    insert(":q!")
     key("enter")
 
 
 
-win left:
+go win left:
     key("ctrl-w")
     key("h")
-win down:
+go win down:
     key("ctrl-w")
     key("j")
-win up:
+go win up:
     key("ctrl-w")
     key("k")
-win right:
+go win right:
     key("ctrl-w")
     key("l")
 
