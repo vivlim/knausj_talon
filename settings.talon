@@ -7,7 +7,7 @@ settings():
 # end viv settings
 
     # Adjust the scale of the imgui to my liking
-    imgui.scale = 1.3
+    imgui.scale = 0.9
 
     # Enable if you'd like the picker gui to automatically appear when explorer has focus
     user.file_manager_auto_show_pickers = 0
