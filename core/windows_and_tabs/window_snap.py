@@ -211,9 +211,13 @@ class RelativeScreenPos:
 
 _snap_positions = {
     "primary": RelativeScreenPos(3 / 10, 0, 7 / 10, 1),
-    "middle": RelativeScreenPos(3 / 10, 0, 7 / 10, 1),
-    "left": RelativeScreenPos(0, 0, 3 / 10, 1),
-    "right": RelativeScreenPos(7 / 10, 0, 1, 1),
+    "middle": RelativeScreenPos(1 / 4, 0, 3 / 4, 1),
+    "left": RelativeScreenPos(0, 0, 1 / 4, 1),
+    "top left": RelativeScreenPos(0, 0, 1 / 4, 1/2),
+    "bottom left": RelativeScreenPos(0, 1/2, 1 / 4, 1),
+    "right": RelativeScreenPos(3 / 4, 0, 1, 1),
+    "top right": RelativeScreenPos(3 / 4, 0, 1, 1/2),
+    "bottom right": RelativeScreenPos(3 / 4, 1/2, 1, 1),
     "big": RelativeScreenPos(0 / 10, 0, 6 / 10, 1),
     "small": RelativeScreenPos(6 / 10, 0, 10 / 10, 1),
     "small top": RelativeScreenPos(6 / 10, 0, 10 / 10, 0.6),
@@ -226,8 +230,8 @@ _snap_positions = {
     # '---'---'     '-------'
     "left half": RelativeScreenPos(0, 0, 0.5, 1),
     "right half": RelativeScreenPos(0.5, 0, 1, 1),
-    "top": RelativeScreenPos(0, 0, 1, 0.5),
-    "bottom": RelativeScreenPos(0, 0.5, 1, 1),
+    "top half": RelativeScreenPos(0, 0, 1, 0.5),
+    "bottom half": RelativeScreenPos(0, 0.5, 1, 1),
     # Thirds
     # .--.--.--.
     # |  |  |  |
@@ -248,10 +252,10 @@ _snap_positions = {
     # .---.---.
     # |---|---|
     # '---'---'
-    "top left": RelativeScreenPos(0, 0, 0.5, 0.5),
-    "top right": RelativeScreenPos(0.5, 0, 1, 0.5),
-    "bottom left": RelativeScreenPos(0, 0.5, 0.5, 1),
-    "bottom right": RelativeScreenPos(0.5, 0.5, 1, 1),
+    "top left quarter": RelativeScreenPos(0, 0, 0.5, 0.5),
+    "top right quarter": RelativeScreenPos(0.5, 0, 1, 0.5),
+    "bottom left quarter": RelativeScreenPos(0, 0.5, 0.5, 1),
+    "bottom right quarter": RelativeScreenPos(0.5, 0.5, 1, 1),
     # Sixths
     # .--.--.--.
     # |--|--|--|
