@@ -84,11 +84,15 @@ wheel upper: user.mouse_scroll_up_continuous()
 wheel upper here:
     user.mouse_move_center_active_window()
     user.mouse_scroll_up_continuous()
-wheel gaze: user.mouse_gaze_scroll()
+wheel gaze:
+    user.mouse_gaze_scroll()
+    user.mouse_hide_cursor()
 wheel gaze here:
     user.mouse_move_center_active_window()
     user.mouse_gaze_scroll()
-wheel stop: user.mouse_scroll_stop()
+wheel stop:
+    user.mouse_scroll_stop()
+    user.mouse_show_cursor()
 wheel stop here:
     user.mouse_move_center_active_window()
     user.mouse_scroll_stop()
@@ -109,6 +113,3 @@ wheel tiny right here:
     user.mouse_move_center_active_window()
     user.mouse_scroll_right(0.5)
 copy mouse position: user.copy_mouse_position()
-curse no:
-    # Command added 2021-12-13, can remove after 2022-06-01
-    app.notify("Please activate the user.mouse_cursor_commands_enable tag to enable this command")
