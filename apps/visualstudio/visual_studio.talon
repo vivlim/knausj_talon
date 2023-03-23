@@ -99,11 +99,6 @@ debug continue: key(f5)
 # Building
 build solution: key(ctrl-shift-b)
 
-
-
-(enable vim|vim mode):
-    user.enable_vim()
-
 (search box|control cue) [<user.text>]:
     key("ctrl-q")
     insert(user.text or "")

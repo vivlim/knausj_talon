@@ -5,16 +5,13 @@ vim reset:
     key("escape")
     user.leave_insert_mode()
 
-vim disable:
+vim no:
     user.disable_vim()
 
-vim enable:
+vim yes:
     user.leave_insert_mode()
 
-disable vim:
-    user.disable_vim()
-
-enable vim:
+vim on:
     user.leave_insert_mode()
 
 vim off:
