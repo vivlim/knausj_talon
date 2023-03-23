@@ -8,6 +8,8 @@ tag(): user.snippets
 tag(): user.splits
 tag(): user.tabs
 tag(): user.vivlim_vim
+
+show hover: user.vscode("editor.action.showHover")
 window reload: user.vscode("workbench.action.reloadWindow")
 window close: user.vscode("workbench.action.closeWindow")
 #multiple_cursor.py support end
@@ -18,11 +20,13 @@ please [<user.text>]:
 
 # Sidebar
 bar explore: user.vscode("workbench.view.explorer")
+bar files: user.vscode("workbench.view.explorer")
 bar extensions: user.vscode("workbench.view.extensions")
 bar outline: user.vscode("outline.focus")
 bar run: user.vscode("workbench.view.debug")
 bar search: user.vscode("workbench.view.search")
 bar source: user.vscode("workbench.view.scm")
+bar git: user.vscode("workbench.view.scm")
 bar test: user.vscode("workbench.view.testing.focus")
 bar switch: user.vscode("workbench.action.toggleSidebarVisibility")
 
@@ -109,7 +113,7 @@ format selection: user.vscode("editor.action.formatSelection")
 imports fix: user.vscode("editor.action.organizeImports")
 problem next: user.vscode("editor.action.marker.nextInFiles")
 problem last: user.vscode("editor.action.marker.prevInFiles")
-problem fix: user.vscode("problems.action.showQuickFixes")
+problem fix: user.vscode("editor.action.quickFix")
 rename that: user.vscode("editor.action.rename")
 refactor that: user.vscode("editor.action.refactor")
 whitespace trim: user.vscode("editor.action.trimTrailingWhitespace")
@@ -292,3 +296,7 @@ control p [<user.text>]:
 control shift p [<user.text>]:
     key("ctrl-shift-p")
     insert(user.text or "")
+
+git stage:
+    user.vscode("git.stage")
+    user.vscode("workbench.view.scm")

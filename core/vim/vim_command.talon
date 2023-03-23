@@ -1,6 +1,8 @@
 tag: user.vivlim_vim_command
 tag: user.vivlim_vim_on
 -
+<user.number_string>: "{number_string}"
+
 insert:
     key("i")
     user.enter_insert_mode()
@@ -101,14 +103,17 @@ visual line:
     key("shift-v")
 
 file save:
+    key("escape")
     insert(":w")
     key("enter")
 
 file save and close:
+    key("escape")
     insert(":wq")
     key("enter")
 
 file close without saving:
+    key("escape")
     insert(":q!")
     key("enter")
 
