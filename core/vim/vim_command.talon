@@ -2,6 +2,7 @@ tag: user.vivlim_vim_command
 tag: user.vivlim_vim_on
 -
 <user.number_string>: "{number_string}"
+<user.symbol_key>: key(symbol_key)
 
 insert:
     key("i")
@@ -86,11 +87,17 @@ change surround:
     key("c")
     key("s")
 
+word:
+    key("w")
+
 drow:
     key("b")
 
 shift drow:
     key("shift-b")
+
+shift word:
+    key("shift-w")
 
 clipboard:
     key("shift-'")
