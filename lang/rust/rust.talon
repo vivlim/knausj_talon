@@ -103,3 +103,11 @@ macro wrap {user.code_macros}:
 block dock comment: user.code_comment_documentation_block()
 inner dock comment: user.code_comment_documentation_inner()
 inner block dock comment: user.code_comment_documentation_block_inner()
+
+## common generics
+inside vec: user.insert_between("Vec<", ">")
+inside option: user.insert_between("Vec<", ">")
+inside result: user.insert_between("Result<", ", >")
+empty vec: insert("vec![]")
+returns: insert(" -> ")
+turbo fish: user.insert_between("::<", ">")

@@ -1,6 +1,7 @@
 control mouse: tracking.control_toggle()
 eye tracker: tracking.control_toggle()
 zoom mouse: tracking.control_zoom_toggle()
+scope mouse: tracking.control_zoom_toggle()
 camera overlay: tracking.control_debug_toggle()
 run calibration: tracking.calibrate()
 touch:

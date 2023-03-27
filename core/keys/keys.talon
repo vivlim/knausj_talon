@@ -12,6 +12,10 @@ press <user.modifiers>: key(modifiers)
 # for consistency with dictation mode and explicit arrow keys if you need them.
 press <user.keys>: key(keys)
 
+hold <user.modifiers>: key("{modifiers}:down")
+release <user.modifiers>: key("{modifiers}:up")
+
+
 # commonly said keys
 space: key("space")
 wipe: key("backspace")
