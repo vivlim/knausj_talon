@@ -3,8 +3,3 @@ key(f22):
 
 key(f23):
     speech.toggle()
-
-key(f20:up):
-    mouse_release(0)
-key(f20:down):
-    mouse_drag(0)

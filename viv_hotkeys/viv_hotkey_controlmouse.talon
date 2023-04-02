@@ -7,9 +7,15 @@ settings():
 key(f22):
     user.viv_hotkey_controlmouse_off()
 
-# key beside H is a left *cick* (not drag!)
+# key beside H is a left *click* (not drag!)
 key(f18:down):
     mouse_click(0)
+
+
+key(f20:up):
+    mouse_release(0)
+key(f20:down):
+    mouse_drag(0)
 
 # and right mouse button below , instead of wheel
 key(f21:down): mouse_drag(1)

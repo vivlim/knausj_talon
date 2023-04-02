@@ -10,3 +10,9 @@ key(f21:down):
 key(f21:up):
     user.mouse_scroll_stop()
     user.mouse_show_cursor()
+
+key(f20:up):
+    user.viv_hotkey_controlmouse_held_off()
+    mouse_click(0)
+key(f20:down):
+    user.viv_hotkey_controlmouse_held_on()
